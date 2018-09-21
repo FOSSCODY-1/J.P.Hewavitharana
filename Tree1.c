@@ -22,22 +22,18 @@ struct node* new_node(int data){
 	return newNode; 
 }
 
-void search(struct node * root, int key){
-	if(root->data==key){
-		printf("Found\n");
-		return;
-	}
-	else if(root==NULL){
-		printf("Not found\n");         //*****
-		return;
+struct node* search(struct node * root, int key){ //***
+	if(root->data==key || root==NULL){
+		//printf("Found\n");
+		return root;
 	}
 	else{
 		if(key< root->data){
-			printf("low\n");
-			search(root->left, key);
+			//printf("low\n");
+			return search(root->left, key);
 		}
 		else{
-			search(root->right, key);
+			return search(root->right, key);
 		}
 	}
 }
@@ -159,7 +155,12 @@ int main(){
 				
 				case 3:printf("Enter Node Data\n");
 				scanf("%d",&data);
-				search(root,data);
+				if(search(root,data)!=NULL){
+					printf("Found\n");
+				}
+				else{
+					printf("Not Found\n");
+				}
 				break;
 				
 				case 4:
