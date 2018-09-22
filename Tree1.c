@@ -21,21 +21,20 @@ struct node* new_node(int data){
 	
 	return newNode; 
 }
-
-struct node* search(struct node * root, int key){ //***
-	if(root->data==key || root==NULL){
-		//printf("Found\n");
-		return root;
-	}
-	else{
-		if(key< root->data){
-			//printf("low\n");
+int search(struct node * root, int key){
+	while(root!=NULL){
+		if(root->data==key){
+			return 1;
+		}
+		else if(key<root->data){
 			return search(root->left, key);
 		}
-		else{
-			return search(root->right, key);
+		else if(key>root->data){
+			return search(root->right,key);
 		}
 	}
+	return 0;
+
 }
 
 struct node * insert(struct node * root, int data){
@@ -155,7 +154,7 @@ int main(){
 				
 				case 3:printf("Enter Node Data\n");
 				scanf("%d",&data);
-				if(search(root,data)!=NULL){
+				if(search(root,data)==1){
 					printf("Found\n");
 				}
 				else{
@@ -194,31 +193,4 @@ int main(){
 			}
 		}
 	}
-	/*root=new_node(10);
-	insert(root, 4);
-	insert(root, 3);
-	insert(root, 20);
-	insert(root, 5);
-	insert(root, 1);
-	
-	inOrder(root);
-	preOrder(root);
-	postOrder(root);
-	levelOrder(root);
-	/*struct node*min;
-	root=new_node(5);
-	insert(root,3);
-	insert(root,10);
-	insert(root,1);
-	inOrder(root);
-	min=minval(root);
-	printf("min=%d ", min->data);
-	del(root, 10);
-	inOrder(root);
-	printf("\n");
-	printf ("wawawa\n");
-	preOrder(root);
-	printf("\n");
-	postOrder(root);
-	//search(root, 3);*/
 }
