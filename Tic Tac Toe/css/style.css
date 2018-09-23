@@ -1,0 +1,36 @@
+body{
+	background:#6666ff;
+}
+.container{
+	margin-top=100px
+}
+.board{
+	width:50%;
+	margin:auto;
+}
+
+.row {
+  display: flex;
+  margin-top=50px;
+}
+
+.cell {
+  flex: 1;
+  height: 250px;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: #ccccff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+.message{
+	width:50%;
+	margin:auto;
+	margin-bottom:20px;
+	background:#3333ff;
+	text-align:center;
+	color:#ffffff;
+	border-style:solid;
+}
