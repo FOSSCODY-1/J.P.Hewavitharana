@@ -1,12 +1,14 @@
 body{
 	background:#6666ff;
+	font-family:sans-serif;
 }
 .container{
 	margin-top=100px
 }
 table{
-	width:750px;
+	width:600px;
 	margin:auto;
+	padding-bottom:20px;
 }
 
 tr {
@@ -14,15 +16,17 @@ tr {
   margin-top=50px;
 }
 
-.cell {
+td {
   flex: 1;
-  height: 250px;
+  height: 200px;
   cursor: pointer;
-  transition: all 0.15s;
   background: #ccccff;
   border-width: 1px;
   border-style: solid;
   border-color: #0000ff;
+  font-size:150px;
+  text-align:center;
+  color:#0000ff;
 }
 
 .message{
@@ -33,4 +37,19 @@ tr {
 	text-align:center;
 	color:#ffffff;
 	border-style:solid;
+}
+
+#message{
+	font-size:40px;
+}
+button{
+	cursor:pointer;
+	margin:auto;
+	display:block;
+	background:#3333ff;
+	color:#ffffff;
+	width:200px;
+	font-size:50px;
+	padding:10px 10px;
+	border:solid;
 }
