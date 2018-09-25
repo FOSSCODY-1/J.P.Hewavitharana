@@ -9,7 +9,10 @@ function setMessage(msg){
 
 function play(cell){
 	if(checkWinner(document.turn)){
-		setMessage("GAME OVER!!! Click Restart To Replay");
+		setMessage(document.turn+" WON!!! Click Restart To Replay");
+	}
+	else if(checkDraw()){
+		setMessage("GAME DRAW! Click Restart To Replay");
 	}
 	else if(cell.innerText==""){
 		cell.innerText=document.turn;
@@ -23,7 +26,10 @@ function play(cell){
 
 function next(){
 	if(checkWinner(document.turn)){
-		setMessage(document.turn+" WON!!! Click Restart To Replay")
+		setMessage(document.turn+" WON!!! Click Restart To Replay");
+	}
+	else if(checkDraw()){
+		setMessage("GAME DRAW! Click Restart To Replay");
 	}
 	else if(document.turn=="X"){
 		document.turn="O";
@@ -57,4 +63,16 @@ function checkWinner(value){
 		winner=true;
 	}
 	return winner;
+}
+
+function checkDraw(){
+	var i;
+	var draw=true;
+	for(i=1;i<10;i++){
+		if(getCell(i)==""){
+			draw=false;
+			break;
+		}
+	}
+	return draw;
 }
