@@ -1,12 +1,15 @@
 body{
-	background:#6666ff;
+	background-image: url("../img/background.jpg");
+	background-color:#662200;
+	background-repeat: no-repeat;
+	background-size: cover;
 	font-family:sans-serif;
 }
 .container{
 	margin-top=100px
 }
 table{
-	width:600px;
+	width:450px;
 	margin:auto;
 	padding-bottom:20px;
 }
@@ -18,38 +21,50 @@ tr {
 
 td {
   flex: 1;
-  height: 200px;
+  height: 150px;
   cursor: pointer;
-  background: #ccccff;
+  background-image: url("../img/box.jpg");
+  background-color:#661a00;
   border-width: 1px;
   border-style: solid;
-  border-color: #0000ff;
+  border-color: #ffffff;
   font-size:150px;
   text-align:center;
-  color:#0000ff;
+  color:#ffffff;
+}
+
+td:hover{
+	opacity:0.7;
 }
 
 .message{
 	width:50%;
 	margin:auto;
 	margin-bottom:20px;
-	background:#3333ff;
 	text-align:center;
 	color:#ffffff;
-	border-style:solid;
+	font-size:25px;
+	
 }
 
 #message{
-	font-size:40px;
+	font-size:30px;
+	border-style:solid;
+	border-radius:50px;
 }
 button{
 	cursor:pointer;
 	margin:auto;
 	display:block;
-	background:#3333ff;
 	color:#ffffff;
 	width:200px;
-	font-size:50px;
-	padding:10px 10px;
+	font-size:40px;
+	padding:5px 5px;
 	border:solid;
+	border-radius:12px;
+	background:none;
+	opacity:0.7;
+}
+button:hover{
+	opacity:1;
 }
