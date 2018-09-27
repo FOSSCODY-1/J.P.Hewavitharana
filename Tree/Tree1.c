@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "level.h"
+#include "level.h"  //level order traversal using queue 
+
+//node structure
 
 struct node{
 	int data;
@@ -9,6 +11,8 @@ struct node{
 };
 
 struct node * root=NULL;
+
+//function to create new node
 
 struct node* new_node(int data){
 	struct node*  newNode;
@@ -21,6 +25,9 @@ struct node* new_node(int data){
 	
 	return newNode; 
 }
+
+//function to search for a value in the BST
+
 int search(struct node * root, int key){
 	while(root!=NULL){
 		if(root->data==key){
@@ -37,6 +44,8 @@ int search(struct node * root, int key){
 
 }
 
+//function to insert a new node to the BST
+
 struct node * insert(struct node * root, int data){
 	if(root==NULL){
 		return new_node(data);
@@ -49,8 +58,11 @@ struct node * insert(struct node * root, int data){
 			root->right= insert(root->right, data);
 		}
 	}
-	//return root;
+	return root;
 }
+
+//function to get the node with the minimum value from the BST
+
 struct node* minval(struct node* root){
 	struct node* min=root;
 	while(min->left!=NULL){
@@ -58,6 +70,8 @@ struct node* minval(struct node* root){
 	}
 	return min;
 }
+
+//function to delete a node from the BST
 
 struct node* del (struct node* root, int key){
 	struct node* temp;
@@ -84,9 +98,12 @@ struct node* del (struct node* root, int key){
 			root->right= del(root->right,temp->data);
 		}
 	}
-	//return root;
+	
+	return root;
 
 }
+
+//function for pre order traversal
 
 void preOrder(struct node* root){
 	if(root==NULL){
@@ -99,6 +116,8 @@ void preOrder(struct node* root){
 	}
 }
 
+//function for in order traversal
+
 void inOrder(struct node* root){
 	if(root==NULL){
 		return;
@@ -109,6 +128,8 @@ void inOrder(struct node* root){
 		inOrder(root->right);
 	}
 }
+
+//function for post order traversal
 
 void postOrder(struct node* root){
 	if(root==NULL){
@@ -149,7 +170,12 @@ int main(){
 				
 				case 2: printf("Enter Node Data\n");
 				scanf("%d", &data);
-				del(root,data);
+				if(search(root,data)==1){
+					del(root,data);
+				}
+				else{
+					printf("Node Not Found\n");
+				}
 				break;
 				
 				case 3:printf("Enter Node Data\n");
