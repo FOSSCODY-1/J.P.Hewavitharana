@@ -34,4 +34,4 @@
 ![4](https://user-images.githubusercontent.com/43147809/46196526-fca96900-c324-11e8-88d5-f4052e7e807c.PNG)
 ![5](https://user-images.githubusercontent.com/43147809/46196527-fca96900-c324-11e8-82e4-a35f4697b1a9.PNG)
 
->>>>>>> 226b19ac15c658b71814bb99b5bd383bcf27e423
+
