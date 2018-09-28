@@ -1,5 +1,5 @@
 # J.P.Hewavitharana
-1) Implementation of a Binary Search Tree
+## 1) Implementation of a Binary Search Tree
 
 	Basic Functionalities of a Binary Search Tree implemented using C programming language
 	
@@ -24,6 +24,8 @@
 				> Post Order
 				
 
-2) Tic Tac Toe Game
+## 2) Tic Tac Toe Game
 
 	Basic multiplayer tic-tac-toe game implemented using HTML5, CSS3 and Javascript
+	
+	More info in the README file in the Tic Tac Toe Folder

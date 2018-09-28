@@ -1,4 +1,4 @@
-Instructions To Load The Game
+### Instructions To Load The Game
 
 
 <<<<<<< HEAD
@@ -16,7 +16,7 @@ Instructions To Load The Game
 >>>>>>> 18f8dcbbf2519ecbea9f0a6e45ed24fa33ea704a
 
 
-Game Instructions
+### Game Instructions
 
 
 <<<<<<< HEAD
@@ -43,4 +43,18 @@ Game Instructions
 	>> If neither player managers to win before all the boxes are filled, the game ends as a draw.
 
 	>> Click 'Restart' button to reload the game.
+<<<<<<< HEAD
 >>>>>>> 18f8dcbbf2519ecbea9f0a6e45ed24fa33ea704a
+=======
+	
+	
+### Screenshots of the Game
+
+
+![1](https://user-images.githubusercontent.com/43147809/46196437-b5bb7380-c324-11e8-8640-b064abf3a128.PNG)
+![2](https://user-images.githubusercontent.com/43147809/46196524-fc10d280-c324-11e8-9898-c42599b24672.PNG)
+![3](https://user-images.githubusercontent.com/43147809/46196525-fc10d280-c324-11e8-9232-308321004e9c.PNG)
+![4](https://user-images.githubusercontent.com/43147809/46196526-fca96900-c324-11e8-88d5-f4052e7e807c.PNG)
+![5](https://user-images.githubusercontent.com/43147809/46196527-fca96900-c324-11e8-82e4-a35f4697b1a9.PNG)
+
+>>>>>>> 226b19ac15c658b71814bb99b5bd383bcf27e423
