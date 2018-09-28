@@ -25,8 +25,6 @@ struct node* new_node(int data){
 	newNode->left=NULL;
 	newNode->right=NULL;
 	
-	printf("New Node Created  %d\n\n", newNode->data);
-	
 	return newNode; 
 }
 
@@ -189,6 +187,7 @@ int main(){
 				case 1: printf("INSERT NODE ===>\n\nEnter Node Data\n");
 				scanf("%d", &data);
 				insert(root,data);
+				printf("New Node Created => %d\n\n",data);
 				break;
 				
 				//delete node
@@ -196,6 +195,7 @@ int main(){
 				scanf("%d", &data);
 				if(search(root,data)==1){ //check whether the node is in the BST
 					del(root,data);
+					printf("Node deleted => %d\n\n",data);
 				}
 				else{ //if node is not in the BST
 					printf("Node Not Found\n");
