@@ -27,3 +27,5 @@
 2) Tic Tac Toe Game
 
 	Basic multiplayer tic-tac-toe game implemented using HTML5, CSS3 and Javascript
+	
+	More info in the README file in the Tic Tac Toe Folder
