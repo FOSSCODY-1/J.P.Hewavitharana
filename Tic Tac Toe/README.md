@@ -1,4 +1,4 @@
-Instructions To Load The Game
+### Instructions To Load The Game
 
 
 	>> Download the 'Tic Tac Toe' folder from the repository as a zip file.
@@ -8,7 +8,7 @@ Instructions To Load The Game
 	>> Open the 'tic_tac_toe.html' file in a web browser.
 
 
-Game Instructions
+### Game Instructions
 
 
 	>> This is a two player game (player 'X' and player 'O').
@@ -24,7 +24,7 @@ Game Instructions
 	>> Click 'Restart' button to reload the game.
 	
 	
-Screenshots of the Game
+### Screenshots of the Game
 
 
 ![1](https://user-images.githubusercontent.com/43147809/46196437-b5bb7380-c324-11e8-8640-b064abf3a128.PNG)
