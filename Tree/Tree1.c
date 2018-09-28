@@ -10,7 +10,11 @@ struct node{
 	struct node *right;
 };
 
-struct node * root=NULL;
+
+
+struct node * root=NULL;  //root node intialized to null
+
+
 
 //function to create new node
 
@@ -21,10 +25,12 @@ struct node* new_node(int data){
 	newNode->left=NULL;
 	newNode->right=NULL;
 	
-	printf("new node created  %d\n\n", newNode->data);
+	printf("New Node Created  %d\n\n", newNode->data);
 	
 	return newNode; 
 }
+
+
 
 //function to search for a value in the BST
 
@@ -44,6 +50,8 @@ int search(struct node * root, int key){
 
 }
 
+
+
 //function to insert a new node to the BST
 
 struct node * insert(struct node * root, int data){
@@ -61,6 +69,8 @@ struct node * insert(struct node * root, int data){
 	return root;
 }
 
+
+
 //function to get the node with the minimum value from the BST
 
 struct node* minval(struct node* root){
@@ -70,6 +80,8 @@ struct node* minval(struct node* root){
 	}
 	return min;
 }
+
+
 
 //function to delete a node from the BST
 
@@ -103,6 +115,8 @@ struct node* del (struct node* root, int key){
 
 }
 
+
+
 //function for pre order traversal
 
 void preOrder(struct node* root){
@@ -115,6 +129,8 @@ void preOrder(struct node* root){
 		preOrder(root->right);
 	}
 }
+
+
 
 //function for in order traversal
 
@@ -129,6 +145,8 @@ void inOrder(struct node* root){
 	}
 }
 
+
+
 //function for post order traversal
 
 void postOrder(struct node* root){
@@ -142,6 +160,9 @@ void postOrder(struct node* root){
 	}
 }
 
+
+
+//main function
 
 int main(){
 	
@@ -163,22 +184,26 @@ int main(){
 			scanf ("%d", &choice);
 			
 			switch(choice){
-				case 1: printf("Enter Node Data\n");
+				
+				//insert node
+				case 1: printf("INSERT NODE ===>\n\nEnter Node Data\n");
 				scanf("%d", &data);
 				insert(root,data);
 				break;
 				
-				case 2: printf("Enter Node Data\n");
+				//delete node
+				case 2: printf("DELETE NODE ===>\n\nEnter Node Data\n");
 				scanf("%d", &data);
-				if(search(root,data)==1){
+				if(search(root,data)==1){ //check whether the node is in the BST
 					del(root,data);
 				}
-				else{
+				else{ //if node is not in the BST
 					printf("Node Not Found\n");
 				}
 				break;
 				
-				case 3:printf("Enter Node Data\n");
+				//search for node
+				case 3:printf("SEARCH NODE ===>\n\nEnter Node Data\n");
 				scanf("%d",&data);
 				if(search(root,data)==1){
 					printf("Found\n");
@@ -188,6 +213,7 @@ int main(){
 				}
 				break;
 				
+				//traversal
 				case 4:
 					printf("\n===   Choose Traversal Method   ===\n");
 					printf("-------------------------------------\n\n\n");
@@ -198,22 +224,32 @@ int main(){
 					scanf("%d", &choice);
 					
 					switch (choice){
+						
+						//level order
 						case 1: printf("Level Order Traversal ===> ");
 						levelOrder(root);
 						break;
+						
+						//pre order
 						case 2: printf("Pre Order Traversal ===> "); 
 						preOrder(root);
 						break;
+						
+						//in order
 						case 3: printf("In Order Traversal ===> ");
 						inOrder(root);
 						break;
+						
+						//post order
 						case 4:printf("Post Order Traversal ===> ");
 						postOrder(root);
 						break;
+						
 						default: printf("Invalid choice\n");
 					}
 				break;
 				
+				//quit program
 				case 5:break;	
 				default: printf("Invalid choice\n");
 			}

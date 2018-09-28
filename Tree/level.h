@@ -4,14 +4,20 @@
 #include<stdio.h>
 #define size 20
 
+//node structure
 struct _node{
 	int data;
 	struct _node *left;
 	struct _node *right;
 };
 
-struct _node* queue[size];
-int front=-1, rear=-1;
+
+struct _node* queue[size]; //queue of pointer to nodes
+int front=-1, rear=-1; //front and rear of queue
+
+
+
+//function to enqueue 
 
 void enqueue(struct _node *root){
 	if(rear==size-1){
@@ -28,6 +34,10 @@ void enqueue(struct _node *root){
 	}
 }
 
+
+
+//function to dequeue
+
 struct _node* dequeue(){
 	if(front==-1){
 		printf("Queue is empty");
@@ -36,6 +46,10 @@ struct _node* dequeue(){
 		return queue[front++];
 	}
 }
+
+
+
+//function for level order traversal
 
 void levelOrder(struct _node* root){
 	while(root!=NULL){
