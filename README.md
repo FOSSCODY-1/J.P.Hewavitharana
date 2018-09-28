@@ -33,6 +33,6 @@
 	More info in the README file in the Tic Tac Toe Folder
 	
 	Online demo link for the game => 
-   https://tic-tac-toe-demo.000webhostapp.com/
+   [tic-tac-toe](https://tic-tac-toe-demo.000webhostapp.com/)
 	
 	
