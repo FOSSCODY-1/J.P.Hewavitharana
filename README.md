@@ -23,16 +23,16 @@
 				
 				> Post Order
 				
-	More info in the README file in the Tree Folder
+####	More info in the README file in the Tree Folder
 	
 	
 ## 2) Tic Tac Toe Game
 
 	Basic multiplayer tic-tac-toe game implemented using HTML5, CSS3 and Javascript
 	
-	More info in the README file in the Tic Tac Toe Folder
+####	More info in the README file in the Tic Tac Toe Folder
 	
-	Online demo link for the game => 
-   [tic-tac-toe](https://tic-tac-toe-demo.000webhostapp.com/)
+Online demo link for the game =>
+[tic-tac-toe](https://tic-tac-toe-demo.000webhostapp.com/)
 	
 	
