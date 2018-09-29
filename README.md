@@ -23,7 +23,7 @@
 				
 				> Post Order
 				
-####	More info in the README file in the Tree Folder
+####	More info in the [README](https://github.com/FOSSCODY-1/J.P.Hewavitharana/blob/master/Tree/README.md) file in the Tree Folder
 	
 	
 ## 2) Tic Tac Toe Game
