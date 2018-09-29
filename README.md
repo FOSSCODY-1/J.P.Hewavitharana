@@ -30,7 +30,7 @@
 
 	Basic multiplayer tic-tac-toe game implemented using HTML5, CSS3 and Javascript
 	
-####	More info in the README file in the Tic Tac Toe Folder
+####	More info in the [README](https://github.com/FOSSCODY-1/J.P.Hewavitharana/blob/master/Tic%20Tac%20Toe/README.md) file in the Tic Tac Toe Folder
 	
 Online demo link for the game =>
 [tic-tac-toe](https://tic-tac-toe-demo.000webhostapp.com/)
